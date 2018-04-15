@@ -11,7 +11,7 @@ public class CheckBoxQuestion extends Question implements AnswerChecker{
     public CheckBoxQuestion(String question, String[] answers, String[] possibleAnswers){
         super(question, possibleAnswers);
         this.answers = answers;
-        this.typeOfQuestion = "checkbox";
+        this.typeOfQuestion = QuestionsStaticText.CheckBox;
     }
 
     public String[] getAnswers(){

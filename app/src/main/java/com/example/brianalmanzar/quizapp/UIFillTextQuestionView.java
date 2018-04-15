@@ -14,7 +14,7 @@ public class UIFillTextQuestionView extends LinearLayout implements TypeQuestion
     private int privateID;
     private TextView textToDisplay;
     private EditText textInput;
-    private String type = "filltext";
+    private String type = QuestionsStaticText.FillText;
 
     public UIFillTextQuestionView(Context context){
         super(context);

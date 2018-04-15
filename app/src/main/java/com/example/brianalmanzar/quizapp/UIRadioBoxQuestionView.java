@@ -17,7 +17,7 @@ public class UIRadioBoxQuestionView extends LinearLayout implements TypeQuestion
     private RadioButton[] radioButtons;
     private TextView question;
     private String[] dataQuestion;
-    private String type = "radiobox";
+    private String type = QuestionsStaticText.RadioBox;
 
     public UIRadioBoxQuestionView(Context context){
       super(context);

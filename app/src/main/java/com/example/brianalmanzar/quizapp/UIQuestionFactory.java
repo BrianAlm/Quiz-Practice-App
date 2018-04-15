@@ -26,17 +26,17 @@ public class UIQuestionFactory {
        String questionType = type.toLowerCase();
 
        switch (questionType){
-           case "checkbox":
+           case QuestionsStaticText.CheckBox:
                UICheckBoxQuestionView checkView = new UICheckBoxQuestionView(inContext);
                checkView.setDataQuesion(withQuestion.getQuestion(), withQuestion.getPossibleAnswers());
                checkView.setIDToIdentifyTheQuestionItIsDisplaying(withQuestion.getId());
                return checkView;
-           case "radiobox":
+           case QuestionsStaticText.RadioBox:
                UIRadioBoxQuestionView radioView = new UIRadioBoxQuestionView(inContext);
                radioView.setDataQuestion(withQuestion.getQuestion(), withQuestion.getPossibleAnswers());
                radioView.setIDToIdentifyTheQuestionItIsDisplaying(withQuestion.getId());
                return  radioView;
-           case "filltext":
+           case QuestionsStaticText.FillText:
                UIFillTextQuestionView filltext = new UIFillTextQuestionView(inContext);
                filltext.setDataQuestion(withQuestion.getQuestion());
                filltext.setIDToIdentifyTheQuestionItIsDisplaying(withQuestion.getId());

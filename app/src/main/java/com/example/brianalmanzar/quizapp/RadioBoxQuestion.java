@@ -11,7 +11,7 @@ public class RadioBoxQuestion extends Question implements AnswerChecker{
     public RadioBoxQuestion(String question, String answer, String[] possibleAnswers){
         super(question, possibleAnswers);
         this.answer = answer;
-        this.typeOfQuestion = "radiobox";
+        this.typeOfQuestion = QuestionsStaticText.RadioBox;
     }
 
     /*

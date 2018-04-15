@@ -17,7 +17,7 @@ public class UICheckBoxQuestionView extends LinearLayout implements TypeQuestion
     private TextView question;
     private CheckBox[] options;
     private String[] dataQuesion;
-    private String type = "checkbox";
+    private String type = QuestionsStaticText.CheckBox;
 
     public UICheckBoxQuestionView(Context context){
         super(context);

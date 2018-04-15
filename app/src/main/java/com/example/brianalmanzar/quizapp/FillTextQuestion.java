@@ -12,13 +12,13 @@ public class FillTextQuestion extends Question implements AnswerChecker {
     public FillTextQuestion(String question, String answer){
         super(question, new String[0]);
         this.answer = answer.toLowerCase();
-        this.typeOfQuestion = "filltext";
+        this.typeOfQuestion = QuestionsStaticText.FillText;
     }
 
     public FillTextQuestion(String question, String answer, String[] possibleAnswers){
         super(question,possibleAnswers);
         this.answer = answer.toLowerCase();
-        this.typeOfQuestion = "filltext";
+        this.typeOfQuestion = QuestionsStaticText.FillText;
     }
 
     public String getAnswer(){
