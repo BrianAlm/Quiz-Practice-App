@@ -23,7 +23,6 @@ public class RadioBoxQuestion extends Question implements AnswerChecker{
 
 
     public boolean checkAnswer(String... answer){
-        //Log.i("Radio Box", answer[0]);
         return this.answer.equals(answer[0]);
     }
 

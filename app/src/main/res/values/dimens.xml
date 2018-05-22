@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <resources>
     <!-- activity_main2 properties -->
-    <dimen name="final_score_label_text_size">50sp</dimen>
+    <dimen name="final_score_label_text_size">30sp</dimen>
     <dimen name="final_score_label_placeholder_text_size">100sp</dimen>
     <dimen name="final_score_label_placeholder_textview_vertical_margin"></dimen>
+    <dimen name="retake_quiz_button_text_size">40sp</dimen>
 
 
     <!-- activity_main properties -->

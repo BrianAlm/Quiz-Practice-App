@@ -27,8 +27,6 @@ public class FillTextQuestion extends Question implements AnswerChecker {
 
     public boolean checkAnswer(String... answer){
         String lowerCaseAnswer = answer[0].toLowerCase();
-        Log.i("Message :: ", lowerCaseAnswer + Boolean.toString(this.answer.equals(lowerCaseAnswer)));
-        Log.i("Answer :: ", this.answer);
         return this.answer.equals(lowerCaseAnswer);
     }
 

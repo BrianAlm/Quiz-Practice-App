@@ -1,28 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.brianalmanzar.quizapp.Main2Activity">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/text_view_final_score_label"
-        android:textColor="@color/black_text_color"
-        android:gravity="center"
-        android:textSize="@dimen/final_score_label_text_size"
-        />
-    <TextView
-        android:id="@+id/score_results"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/text_view_final_score_number_place_holder"
-        android:textSize="@dimen/final_score_label_placeholder_text_size"
-        android:gravity="center"
-        android:layout_marginVertical="@dimen/final_score_label_placeholder_textview_vertical_margin"
-        android:textColor="@color/black_text_color"
-        />
 
-</LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_restar_quiz_text"
+        android:onClick="restarQuiz"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/white_text_color"
+        android:textSize="@dimen/retake_quiz_button_text_size"
+        android:backgroundTint="@color/colorPrimaryDark"
+        tools:targetApi="lollipop" />
+
+</RelativeLayout>

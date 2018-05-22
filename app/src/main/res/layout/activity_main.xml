@@ -4,23 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.brianalmanzar.quizapp.MainActivity"
-    >
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/main_layout_view_id"
-    android:orientation="vertical"
-    >
+    tools:context="com.example.brianalmanzar.quizapp.MainActivity">
 
-    <Button
+    <LinearLayout
+        android:id="@+id/main_layout_view_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/submit_button_text"
-        android:onClick="validateAnswers"
-        android:layout_margin="@dimen/submit_button_margin_left"
-        />
+        android:orientation="vertical">
 
-</LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/submit_button_margin_left"
+            android:onClick="validateAnswers"
+            android:text="@string/submit_button_text" />
+
+    </LinearLayout>
 
 </ScrollView>

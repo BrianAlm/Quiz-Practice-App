@@ -7,4 +7,6 @@
     <!-- activity_main2 text -->
     <string name="text_view_final_score_label">Final Score</string>
     <string name="text_view_final_score_number_place_holder">0/0</string>
+
+    <string name="button_restar_quiz_text">Retake Quiz</string>
 </resources>

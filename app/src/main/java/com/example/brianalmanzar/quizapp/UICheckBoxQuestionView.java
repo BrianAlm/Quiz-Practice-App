@@ -53,7 +53,7 @@ public class UICheckBoxQuestionView extends LinearLayout implements TypeQuestion
     /*
        Iterates through the checkboxes of the question to check which one are true.
 
-       @return String[] - The text related to the checkbox that are found checked.
+       @return String[] - The text related to the checkboxes that are found checked.
      */
     public String[] checksCheckboxChecked(){
         int amountOfCheckBoxInView = this.options.length;
@@ -66,12 +66,13 @@ public class UICheckBoxQuestionView extends LinearLayout implements TypeQuestion
             }
         }
 
+        int optionSelectedSize = optionsSelected.size();
         optionsSelectedToReturn = new String[optionsSelected.size()];
 
-        for(int indexOptions = 0; indexOptions < optionsSelected.size(); indexOptions+=1){
+        for(int indexOptions = 0; indexOptions < optionSelectedSize; indexOptions+=1){
             optionsSelectedToReturn[indexOptions] = optionsSelected.remove(0);
         }
-        Log.i("UICheckBox :: ", String.valueOf(optionsSelectedToReturn.length));
+        //Log.i("UICheckBox :: ", String.valueOf(optionsSelectedToReturn.length));
         return optionsSelectedToReturn;
     }
 

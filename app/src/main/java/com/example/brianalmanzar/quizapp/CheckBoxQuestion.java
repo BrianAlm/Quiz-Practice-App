@@ -14,6 +14,7 @@ public class CheckBoxQuestion extends Question implements AnswerChecker{
         this.typeOfQuestion = QuestionsStaticText.CheckBox;
     }
 
+    /* Planing to use this method to show it as a feedback to the user when answer is wrong */
     public String[] getAnswers(){
         return this.answers;
     }
@@ -39,17 +40,6 @@ public class CheckBoxQuestion extends Question implements AnswerChecker{
             }
         }
         return true;
-    }
-
-    /*
-       Compare the ID of the question - Used to compare the ID on the view that present the question.
-
-       @param ID the id number to compare.
-
-       @return boolean - The result of comparing the IDs, it makes a call to its super class where the compareIDWithNumber is declared.
-     */
-    public boolean compareID(int ID){
-        return super.compareIDWithNumber(ID);
     }
 
     /*
